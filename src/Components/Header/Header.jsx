@@ -6,7 +6,7 @@ function Header() {
     <>
       <header className="header__section">
         <div className="main__header main__header--style2 header__sticky">
-          <div className="container-fluid width-100">
+          <div className="container">
             <div className="main__header--inner position__relative d-flex justify-content-between align-items-center">
               <div className="offcanvas__header--menu__open ">
                 <a
@@ -48,7 +48,6 @@ function Header() {
                     <li className="header__menu--items style2">
                       <Link to={'/'}
                         className="header__menu--link style2"
-                        href="index.html"
                       >
                         Home{" "}
                       </Link>
@@ -56,7 +55,6 @@ function Header() {
                     <li className="header__menu--items style2">
                       <Link to={'/about'}
                         className="header__menu--link style2"
-                        
                       >
                         About Us{" "}
                       </Link>
@@ -69,6 +67,16 @@ function Header() {
                         Our Products <span className="menu__plus--icon">+</span>
                       </a>
                       <ul className="header__sub--menu">
+                      <li className="header__sub--menu__items">
+                          <Link to={'/sanditems'} className="header__sub--menu__link">
+                            Sand Items {""}
+                          </Link>
+                        </li>
+                        <li className="header__sub--menu__items">
+                          <Link to={'/bags'} className="header__sub--menu__link">
+                            Bags{""}
+                          </Link>
+                        </li>
                         <li className="header__sub--menu__items">
                           <a
                             href="our-products.html"
@@ -82,11 +90,7 @@ function Header() {
                             Gatrics Table Tops
                           </a>
                         </li>
-                        <li className="header__sub--menu__items">
-                          <a href="#" className="header__sub--menu__link">
-                            Sand Items
-                          </a>
-                        </li>
+                        
                         <li className="header__sub--menu__items">
                           <a href="#" className="header__sub--menu__link">
                             Fiber
@@ -117,20 +121,15 @@ function Header() {
                             Clothing
                           </a>
                         </li>
-                        <li className="header__sub--menu__items">
-                          <a href="#" className="header__sub--menu__link">
-                            Bags
-                          </a>
-                        </li>
+                       
                       </ul>
                     </li>
                     <li className="header__menu--items style2">
-                      <a
+                      <Link to={'/newarrival'}
                         className="header__menu--link style2"
-                        href="launches.html"
                       >
-                        Latest Launches
-                      </a>
+                       NewArrival{""}
+                      </Link>
                     </li>
                     <li className="header__menu--items style2">
                       <Link to={'/contact'}
@@ -142,9 +141,6 @@ function Header() {
                   </ul>
                 </nav>
               </div>
-              <a className="header__contact--text" href="#contactsection">
-                Request A Quote
-              </a>
             </div>
           </div>
         </div>

@@ -16,9 +16,8 @@ const SliderBanner = () => {
   };
 
   return (
-    <Slider {...settings}>
+    <Slider {...settings}> 
       <div>
-        {/* <div className="hero__slider--items home2__slider--items__bg one"/> */}
         <div className="hero__slider--items home2__slider--items__bg one">
           <div className="container">
             <div className="row">
