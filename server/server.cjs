@@ -15,7 +15,7 @@ const corsOptions = {
   origin: 'http://localhost:5173', // Update this to match your React app's origin
   methods: 'POST',
   optionsSuccessStatus: 204,
-};
+}
 
 app.post('/submit-form', cors(corsOptions), async (req, res) => {
   const { firstname, lastname, number, email, message } = req.body;
